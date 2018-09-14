@@ -7,7 +7,6 @@ public class ShapeRenderer : MonoBehaviour {
 
     private List<Shape> Shapes;
 
-	// Use this for initialization
 	void Start () 
     {
         CreateShapes();
@@ -30,10 +29,14 @@ public class ShapeRenderer : MonoBehaviour {
 
     private void RenderShapes()
     {
-        for (int i = 0; i < Shapes.Count; i++)
+        if (Shapes != null)
         {
-            Shapes[i].Draw();
+            for (int i = 0; i < Shapes.Count; i++)
+            {
+                Shapes[i].Draw();
+            }
         }
+
     }
 
 }
