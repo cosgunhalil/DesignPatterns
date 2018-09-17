@@ -9,6 +9,10 @@ public class DecoraterDesignDemo : MonoBehaviour {
         Attack punch = new Punch();
         Attack poisonPunch = new PoisonAttackDecorator(punch);
 
+        Attack highKick = new HighKick();
+        Attack poisonHighKick = new PoisonAttackDecorator(highKick);
+
         poisonPunch.SetDamage();
+        poisonHighKick.SetDamage();
     }
 }

@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{FD1B12FD-5FC7-045D-4E2D-0A88B837B0F0}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DecoraterDesignPattern/DecoraterDesignDemo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DecoraterDesignPattern/AttackDecorator.cs">
     <Files>
-      <File FileName="Assets/DecoraterDesignPattern/Punch.cs" Line="9" Column="29" />
-      <File FileName="Assets/DecoraterDesignPattern/HighKick.cs" Line="9" Column="29" />
-      <File FileName="Assets/DecoraterDesignPattern/AttackDecorater.cs" Line="15" Column="42" />
-      <File FileName="Assets/DecoraterDesignPattern/PoisonAttackDecorator.cs" Line="19" Column="37" />
-      <File FileName="Assets/DecoraterDesignPattern/DecoraterDesignDemo.cs" Line="9" Column="9" />
+      <File FileName="Assets/DecoraterDesignPattern/Punch.cs" Line="3" Column="1" />
+      <File FileName="Assets/DecoraterDesignPattern/HighKick.cs" Line="3" Column="1" />
+      <File FileName="Assets/DecoraterDesignPattern/PoisonAttackDecorator.cs" Line="3" Column="1" />
+      <File FileName="Assets/DecoraterDesignPattern/DecoraterDesignDemo.cs" Line="5" Column="51" />
+      <File FileName="Assets/DecoraterDesignPattern/Attack.cs" Line="2" Column="1" />
+      <File FileName="Assets/DecoraterDesignPattern/AttackDecorator.cs" Line="8" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

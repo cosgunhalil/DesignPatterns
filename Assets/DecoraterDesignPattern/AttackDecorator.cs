@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AttackDecorater : Attack
+public class AttackDecorator : Attack
 {
     protected Attack decoratedAttack;
-    public AttackDecorater(Attack decoreatedAttack)
+    public AttackDecorator(Attack decoreatedAttack)
     {
         this.decoratedAttack = decoreatedAttack;
     }

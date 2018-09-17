@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoisonAttackDecorator : AttackDecorater
+public class PoisonAttackDecorator : AttackDecorator
 {
     public PoisonAttackDecorator(Attack decoreatedAttack) : base(decoreatedAttack)
     {
