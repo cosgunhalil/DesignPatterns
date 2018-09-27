@@ -5,6 +5,7 @@ using UnityEngine;
 public class AttackDecorator : Attack
 {
     protected Attack decoratedAttack;
+
     public AttackDecorator(Attack decoreatedAttack)
     {
         this.decoratedAttack = decoreatedAttack;

@@ -12,7 +12,12 @@ public class DecoraterDesignDemo : MonoBehaviour {
         Attack highKick = new HighKick();
         Attack poisonHighKick = new PoisonAttackDecorator(highKick);
 
+        Attack poisonedFirePunch = new PoisonAttackDecorator(new FireAttackDecorator(punch));
+
         poisonPunch.SetDamage();
+        Debug.Log("<color=green>*********</color>");
         poisonHighKick.SetDamage();
+        Debug.Log("<color=green>*********</color>");
+        poisonedFirePunch.SetDamage();
     }
 }
