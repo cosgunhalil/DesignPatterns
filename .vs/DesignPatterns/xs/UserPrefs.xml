@@ -1,13 +1,20 @@
 ﻿<Properties StartupConfiguration="{FD1B12FD-5FC7-045D-4E2D-0A88B837B0F0}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DecoraterDesignPattern/FireAttackDecorator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ObserverDesignPattern/ScoreDataSubject.cs">
     <Files>
       <File FileName="Assets/DecoraterDesignPattern/Punch.cs" Line="3" Column="1" />
       <File FileName="Assets/DecoraterDesignPattern/HighKick.cs" Line="3" Column="1" />
-      <File FileName="Assets/DecoraterDesignPattern/DecoraterDesignDemo.cs" Line="17" Column="1" />
+      <File FileName="Assets/DecoraterDesignPattern/DecoraterDesignDemo.cs" Line="19" Column="36" />
       <File FileName="Assets/DecoraterDesignPattern/Attack.cs" Line="2" Column="14" />
       <File FileName="Assets/DecoraterDesignPattern/AttackDecorator.cs" Line="8" Column="1" />
-      <File FileName="Assets/DecoraterDesignPattern/FireAttackDecorator.cs" Line="13" Column="37" />
+      <File FileName="Assets/DecoraterDesignPattern/FireAttackDecorator.cs" Line="21" Column="2" />
+      <File FileName="Assets/ObserverDesignPattern/Observer.cs" Line="4" Column="1" />
+      <File FileName="Assets/ObserverDesignPattern/ObserverDesignPatternDemo.cs" Line="23" Column="39" />
+      <File FileName="Assets/ObserverDesignPattern/Achievement.cs" Line="18" Column="32" />
+      <File FileName="Assets/ObserverDesignPattern/SuperScorer.cs" Line="15" Column="6" />
+      <File FileName="Assets/ObserverDesignPattern/BabySteps.cs" Line="13" Column="45" />
+      <File FileName="Assets/ObserverDesignPattern/ImmortalPlayer.cs" Line="14" Column="50" />
+      <File FileName="Assets/ObserverDesignPattern/ScoreDataSubject.cs" Line="6" Column="30" />
       <File FileName="Assets/DecoraterDesignPattern/PoisonAttackDecorator.cs" Line="5" Column="53" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
