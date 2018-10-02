@@ -1,12 +1,12 @@
 ﻿
 public class ScoreDataObserver
 {
-    protected ScoreDataSubject model;
+    protected ScoreDataSubject subject;
 
     public ScoreDataObserver(ScoreDataSubject subject)
     {
-        this.model = subject;
-        model.Attach(this);
+        this.subject = subject;
+        subject.Attach(this);
     }
     
     public virtual void OnNotify()

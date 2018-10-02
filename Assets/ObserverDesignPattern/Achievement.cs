@@ -2,25 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Achievement : ScoreDataObserver
-{
-    protected float target;
-
-    public Achievement(ScoreDataSubject subject) : base(subject)
+    public class Achievement : ScoreDataObserver
     {
-    }
+        protected float target;
 
-    public override void OnNotify()
-    {
-        if (model.GetScore() > target)
+        public Achievement(ScoreDataSubject subject) : base(subject)
         {
-            Achieve();
-            model.Detach(this);
+        }
+
+        public override void OnNotify()
+        {
+            if (subject.GetScore() > target)
+            {
+                Achieve();
+                subject.Detach(this);
+            }
+        }
+
+        protected virtual void Achieve()
+        {
+        
         }
     }
-
-    protected virtual void Achieve()
-    {
-        
-    }
-}
