@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Achievement : Observer
+public class Achievement : ScoreDataObserver
 {
     protected float target;
 

@@ -1,9 +1,9 @@
 ﻿
-public class Observer
+public class ScoreDataObserver
 {
     protected ScoreDataSubject model;
 
-    public Observer(ScoreDataSubject subject)
+    public ScoreDataObserver(ScoreDataSubject subject)
     {
         this.model = subject;
         model.Attach(this);

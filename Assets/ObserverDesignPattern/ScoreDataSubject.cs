@@ -9,14 +9,14 @@ using UnityEngine;
 public class ScoreDataSubject {
     
     private int score;
-    private List<Observer> _observers = new List<Observer>();
+    private List<ScoreDataObserver> _observers = new List<ScoreDataObserver>();
 
-    public void Attach(Observer observer)
+    public void Attach(ScoreDataObserver observer)
     {
         _observers.Add(observer);
     }
 
-    public void Detach(Observer observer)
+    public void Detach(ScoreDataObserver observer)
     {
         _observers.Remove(observer);
     }
