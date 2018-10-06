@@ -7,7 +7,6 @@ public class MoveLeftCommand : Command
     public override void Execute(Actor actor)
     {
         actor.MoveLeft();
-        CommandManager.AddCommand(this);
     }
 
     public override void Undo(Actor actor)

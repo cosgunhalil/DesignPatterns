@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveRightCommand : Command
+public class MoveUpCommand : Command
 {
     public override void Execute(Actor actor)
     {
-        actor.MoveRight();
-        CommandManager.AddCommand(this);
+        actor.MoveUp();
     }
 
     public override void Undo(Actor actor)
     {
-        actor.MoveLeft();
+        actor.MoveDown();
     }
 }
