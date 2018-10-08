@@ -35,6 +35,7 @@ public class BulletPool : MonoBehaviour {
         }
 
         SetupPool(10);
+        BulletEventManager.Instance.OnBulletDeleted += PoolBullet;
 
     }
 
@@ -51,6 +52,8 @@ public class BulletPool : MonoBehaviour {
     private void GenerateBullet()
     {
         var bullet = Instantiate(BulletPrefab).GetComponent<Bullet>();
+        bullet.Init();
+        bullet.ActivateBullet(false);
         _bulletStack.Push(bullet);
     }
 
@@ -60,12 +63,15 @@ public class BulletPool : MonoBehaviour {
         {
             GenerateBullet();
         }
-
-        return _bulletStack.Pop();
+       
+        var bullet = _bulletStack.Pop();
+        bullet.ActivateBullet(true);
+        return bullet;
     }
 
     public void PoolBullet(Bullet bullet)
     {
+        bullet.ActivateBullet(false);
         _bulletStack.Push(bullet);
     }
 }
