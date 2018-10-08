@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class AppManager : MonoBehaviour {
 
+    public GameManager gameManager;
     private InputHandler _inputHandler;
 
     private void Awake()
     {
-        GameManager.Instance.AwakeObject();
+        gameManager.AwakeObject();
     }
 
     private void Start()
     {
-        GameManager.Instance.StartObject();
+        gameManager.StartObject();
         _inputHandler = new InputHandler();
     }
 
