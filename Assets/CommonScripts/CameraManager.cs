@@ -23,12 +23,30 @@ public class CameraManager : MonoBehaviour {
     private Camera _mainCamera;
     private Vector2 _screenSize;
     private Transform _transform;
+    [SerializeField]
+    private CameraLimits _cameraLimits;
 
     private void Init()
     {
         _mainCamera = Camera.main;
         _transform = GetComponent<Transform>();
         CalculateScreenSize();
+        CalculateScreenLimits();
+    }
+
+    private void CalculateScreenLimits()
+    {
+        var cameraTransform = GetComponent<Transform>();
+        var xLength = _screenSize.x / 2f;
+        var yLength = _screenSize.y / 2f;
+
+        _cameraLimits = new CameraLimits
+        {
+            xMax = cameraTransform.position.x + xLength,
+            xMin = cameraTransform.position.x - xLength,
+            yMax = cameraTransform.position.y + yLength,
+            yMin = cameraTransform.position.y - yLength
+        };
     }
 
     private void CalculateScreenSize()
@@ -48,4 +66,18 @@ public class CameraManager : MonoBehaviour {
     {
         return _transform.position;
     }
+
+    public CameraLimits GetCameraLimits()
+    {
+        return _cameraLimits;
+    }
+}
+
+[Serializable]
+public struct CameraLimits
+{
+    public float xMax;
+    public float xMin;
+    public float yMax;
+    public float yMin;
 }

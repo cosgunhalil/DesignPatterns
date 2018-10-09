@@ -8,13 +8,13 @@ public class Bullet : MonoBehaviour {
     private Transform _transform;
     private float _speed;
     private Vector2 _movementDirection;
-    private Vector2 _movementLimit;
+    private CameraLimits _movementLimit;
 
     public void Init()
     {
         _speed = 10f;
         _transform = GetComponent<Transform>();
-        _movementLimit = CameraManager.Instance.GetScreenSize() / 2f;
+        _movementLimit = CameraManager.Instance.GetCameraLimits();
     }
 
     public void SetMovementDirection(Vector2 movementDirection)
@@ -42,10 +42,10 @@ public class Bullet : MonoBehaviour {
     private bool CanMove()
     {
         bool canMove = false;
-        if (_transform.position.x < _movementLimit.x && 
-            _transform.position.x > -_movementLimit.x &&
-            _transform.position.y > -_movementLimit.y &&
-            _transform.position.y < _movementLimit.y)
+        if (_transform.position.x < _movementLimit.xMax && 
+            _transform.position.x > _movementLimit.xMin &&
+            _transform.position.y < _movementLimit.yMax &&
+            _transform.position.y > _movementLimit.yMin)
         {
             canMove = true;
         }

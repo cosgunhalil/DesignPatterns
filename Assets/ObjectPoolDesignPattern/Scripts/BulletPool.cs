@@ -24,7 +24,7 @@ public class BulletPool : MonoBehaviour {
     }
 
     public GameObject BulletPrefab;
-
+    [SerializeField]
     private Stack<Bullet> _bulletStack;
 
     private void Awake()
