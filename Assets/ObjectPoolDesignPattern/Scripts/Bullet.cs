@@ -4,17 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour {
-
-    private Vector2 _movementLimit;
+    
     private Transform _transform;
     private float _speed;
     private Vector2 _movementDirection;
+    private Vector2 _movementLimit;
 
     public void Init()
     {
         _speed = 10f;
         _transform = GetComponent<Transform>();
-        _movementLimit = CameraManager.Instance.GetScreenSize();
+        _movementLimit = CameraManager.Instance.GetScreenSize() / 2f;
     }
 
     public void SetMovementDirection(Vector2 movementDirection)

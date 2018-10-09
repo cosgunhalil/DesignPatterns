@@ -17,6 +17,7 @@ public class BulletManager : MonoBehaviour {
     private void OnDestroy()
     {
         BulletEventManager.Instance.OnBulletFired -= BulletFired;
+        BulletEventManager.Instance.OnBulletDeleted -= DeleteBullet;
     }
 
     void Update ()

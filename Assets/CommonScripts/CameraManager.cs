@@ -22,10 +22,12 @@ public class CameraManager : MonoBehaviour {
 
     private Camera _mainCamera;
     private Vector2 _screenSize;
+    private Transform _transform;
 
     private void Init()
     {
         _mainCamera = Camera.main;
+        _transform = GetComponent<Transform>();
         CalculateScreenSize();
     }
 
@@ -40,5 +42,10 @@ public class CameraManager : MonoBehaviour {
     public Vector2 GetScreenSize()
     {
         return _screenSize;
+    }
+
+    public Vector2 GetPosition()
+    {
+        return _transform.position;
     }
 }
