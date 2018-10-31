@@ -31,16 +31,6 @@ public class DiveState : State {
 
     public override void Exit()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Exit from Dive State");
     }
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

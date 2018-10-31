@@ -7,8 +7,11 @@ public class Soldier : MonoBehaviour {
 
     public Sprite[] Graphics;
 
+    [SerializeField]
     private float velocityX;
+    [SerializeField]
     private bool isOnGround;
+    [SerializeField]
     private InputType inputType;
 
     private FiniteStateMachine fsm;
