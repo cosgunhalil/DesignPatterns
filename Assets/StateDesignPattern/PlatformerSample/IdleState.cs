@@ -12,24 +12,32 @@ public class IdleState : State {
     public override void Enter()
     {
         Debug.Log("Enter Idle State");
-        stateMachine.animationContainer.SetGraphic(0);
+        stateMachine.ChangePlayingGraphicIndex(0);
     }
 
     public override void Execute()
     {
         Debug.Log("<color=blue>Idle Animation is playing</color>");
-
-        if (stateMachine.animationContainer.GetVelocityX() == 0)
+        var velocityX = stateMachine.GetFloat("velocityX");
+        if (stateMachine.GetBool("onGround"))
         {
-            if (stateMachine.animationContainer.GetInputType() == InputType.pressedUpButton)
+            if (velocityX == 0)
             {
-                stateMachine.SetState(StateType.jump);
+                if (stateMachine.GetBool("isJump"))
+                {
+                    stateMachine.SetState("jump");
+                }
+            }
+            else if (velocityX > 0)
+            {
+                stateMachine.SetState("run");
             }
         }
-        else if (stateMachine.animationContainer.GetVelocityX() > 0)
+        else
         {
-            stateMachine.SetState(StateType.run);
+            stateMachine.SetState("jump");
         }
+        
     }
 
     public override void Exit()

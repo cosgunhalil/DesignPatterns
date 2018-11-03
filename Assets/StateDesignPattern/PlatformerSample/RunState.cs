@@ -21,38 +21,38 @@ public class RunState : State {
     {
         Debug.Log("Enter Running State");
         currentGraphicIndex = 0;
-        stateMachine.animationContainer.SetGraphic(currentGraphicIndex);
+        stateMachine.ChangePlayingGraphicIndex(graphicIndexArray[0]);
         time = 0f;
     }
 
     public override void Execute()
     {
         Debug.Log("<color=red>Running Animation is playing</color>");
-        if (stateMachine.animationContainer.IsOnGround())
+        if (stateMachine.GetBool("onGround"))
         {
-            if (stateMachine.animationContainer.GetInputType() == InputType.pressedAButton)
+            if (stateMachine.GetBool("isSuperKickStarted"))
             {
-                stateMachine.SetState(StateType.superKick);
+                stateMachine.SetState("superKick");
             }
-            else if (stateMachine.animationContainer.GetInputType() == InputType.pressedUpButton)
+            else if (stateMachine.GetBool("isJump"))
             {
-                stateMachine.SetState(StateType.jump);
+                stateMachine.SetState("jump");
             }
-            else if (stateMachine.animationContainer.GetVelocityX() == 0)
+            else if (stateMachine.GetFloat("velocityX") == 0)
             {
-                stateMachine.SetState(StateType.idle);
+                stateMachine.SetState("idle");
             }
         }
         else
         {
-            stateMachine.SetState(StateType.jump);
+            stateMachine.SetState("jump");
         }
 
         time += Time.deltaTime;
 
         if (time > frameChangeRate)
         {
-            stateMachine.animationContainer.SetGraphic(graphicIndexArray[GetNextGrahicIndex()]);
+            stateMachine.ChangePlayingGraphicIndex(graphicIndexArray[GetNextGrahicIndex()]);
             time = 0f;
         }
 

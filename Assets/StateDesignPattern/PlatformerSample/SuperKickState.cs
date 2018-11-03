@@ -14,7 +14,7 @@ public class SuperKickState : State {
     public override void Enter()
     {
         Debug.Log("Enter Super Kick State");
-        stateMachine.animationContainer.SetGraphic(5);
+        stateMachine.ChangePlayingGraphicIndex(5);
         currentTime = 0;
     }
 
@@ -23,24 +23,25 @@ public class SuperKickState : State {
         currentTime += Time.deltaTime;
         if (currentTime > playTime)
         {
-            if (stateMachine.animationContainer.IsOnGround())
+            if (stateMachine.GetBool("onGround"))
             {
-                if (stateMachine.animationContainer.GetVelocityX() == 0)
+                var velocityX = stateMachine.GetFloat("velocityX");
+                if (velocityX == 0)
                 {
-                    stateMachine.SetState(StateType.idle);
+                    stateMachine.SetState("idle");
                 }
-                else if (stateMachine.animationContainer.GetVelocityX() > 0)
+                else if (velocityX > 0)
                 {
-                    stateMachine.SetState(StateType.run);
+                    stateMachine.SetState("run");
                 }
             }
             else
             {
-                stateMachine.SetState(StateType.jump);
+                stateMachine.SetState("jump");//may be add a falling state
             }
         }
         Debug.Log("<color=white>Super Kick Animation is playing</color>");
-        
+
     }
 
     public override void Exit()

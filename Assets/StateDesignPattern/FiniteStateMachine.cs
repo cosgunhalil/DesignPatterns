@@ -2,41 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FiniteStateMachine {
+public abstract class FiniteStateMachine {
 
-    public Soldier animationContainer;
-    private Dictionary<StateType, State> states;
-    private State currentState;
+    public abstract void Setup();
+    public delegate void GraphicChanged(int graphicIndex);
+    public GraphicChanged OnGraphicChanged;
 
-    public FiniteStateMachine(Soldier animationContainer)
+    protected Dictionary<string, State> states;
+    protected State currentState;
+
+    protected Dictionary<string, bool> boolVariables;
+    protected Dictionary<string, string> stringVariables;
+    protected Dictionary<string, float> floatVariables;
+
+
+    public void SetState(string state)
     {
-        this.animationContainer = animationContainer;
-
-        states = new Dictionary<StateType, State>()
-        {
-            { StateType.idle, new IdleState(this)},
-            { StateType.run, new RunState   (this)},
-            { StateType.jump, new JumpState(this)},
-            { StateType.dive, new DiveState(this)},
-            { StateType.superKick, new SuperKickState(this)}
-        };
-
-        currentState = states[StateType.idle];
-        CallStateEnter();
-    }
-
-    public void SetState(StateType state)
-    {
-        if (currentState != states[state])
-        {
-            CallStateExit();
-        }
-
+        CallStateExit();
         currentState = states[state];
         CallStateEnter();
     }
 
-    private void CallStateEnter()
+    protected void CallStateEnter()
     {
         currentState.Enter();
     }
@@ -50,13 +37,76 @@ public class FiniteStateMachine {
     {
         currentState.Execute();
     }
-}
 
-public enum StateType
-{
-    idle,
-    run,
-    jump,
-    dive,
-    superKick
+    public void SetBool(string key, bool val)
+    {
+        if (boolVariables.ContainsKey(key))
+        {
+            boolVariables[key] = val;
+        }
+    }
+
+    public bool GetBool(string key)
+    {
+        if (boolVariables.ContainsKey(key))
+        {
+           return boolVariables[key];
+        }
+        else
+        {
+            Debug.Log("undefined key error! Please define the key " + key + " first!");
+            return false;
+        }
+    }
+
+    public void SetFloat(string key, float val)
+    {
+        if (floatVariables.ContainsKey(key))
+        {
+            floatVariables[key] = val;
+        }
+    }
+
+    public float GetFloat(string key)
+    {
+        if (floatVariables.ContainsKey(key))
+        {
+            return floatVariables[key];
+        }
+        else
+        {
+            Debug.Log("undefined key error! Please define the key " + key + " first!");
+            return 0;
+        }
+    }
+
+    public void SetString(string key, string val)
+    {
+        if (stringVariables.ContainsKey(key))
+        {
+            stringVariables[key] = val;
+        }
+    }
+
+    public string GetString(string key)
+    {
+        if (floatVariables.ContainsKey(key))
+        {
+            return stringVariables[key];
+        }
+        else
+        {
+            Debug.Log("undefined key error! Please define the key " + key + " first!");
+            return string.Empty;
+        }
+    }
+
+    public void ChangePlayingGraphicIndex(int index)
+    {
+        if (OnGraphicChanged != null)
+        {
+            OnGraphicChanged(index);
+        }
+    }
+
 }

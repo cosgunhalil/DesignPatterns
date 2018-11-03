@@ -11,20 +11,21 @@ public class DiveState : State {
     public override void Enter()
     {
         Debug.Log("Enter Dive State");
-        stateMachine.animationContainer.SetGraphic(4);
+        stateMachine.ChangePlayingGraphicIndex(4);
     }
 
     public override void Execute()
     {
-        if (stateMachine.animationContainer.IsOnGround())
+        if (stateMachine.GetBool("onGround"))
         {
-            if (stateMachine.animationContainer.GetVelocityX() == 0)
+            var velocityX = stateMachine.GetFloat("velocityX");
+            if (velocityX == 0)
             {
-                stateMachine.SetState(StateType.idle);
+                stateMachine.SetState("idle");
             }
-            else if (stateMachine.animationContainer.GetVelocityX() > 0)
+            else if (velocityX > 0)
             {
-                stateMachine.SetState(StateType.run);
+                stateMachine.SetState("run");
             }
         }
     }

@@ -11,27 +11,27 @@ public class JumpState : State {
     public override void Enter()
     {
         Debug.Log("Enter Jumping State");
-        stateMachine.animationContainer.SetGraphic(1);
+        stateMachine.ChangePlayingGraphicIndex(1);
     }
 
     public override void Execute()
     {
         Debug.Log("<color=yellow>Jumping Animation is playing</color>");
-        if (stateMachine.animationContainer.IsOnGround())
+        if (stateMachine.GetBool("onGround"))
         {
-            var playerVelocityX = stateMachine.animationContainer.GetVelocityX();
+            var playerVelocityX = stateMachine.GetFloat("velocityX");
             if (playerVelocityX == 0)
             {
-                stateMachine.SetState(StateType.idle);
+                stateMachine.SetState("idle");
             }
             else if (playerVelocityX > 0)
             {
-                stateMachine.SetState(StateType.run);
+                stateMachine.SetState("run");
             }
         }
-        else if (stateMachine.animationContainer.GetInputType() == InputType.pressedDownButton)
+        else if (stateMachine.GetBool("isDiveStarted"))
         {
-            stateMachine.SetState(StateType.dive);
+            stateMachine.SetState("dive");
         }
     }
 
