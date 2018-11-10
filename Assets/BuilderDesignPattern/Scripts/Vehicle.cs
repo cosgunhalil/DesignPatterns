@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Vehicle {
 
-    [SerializeField]
     private string vehicleType;
 
     public Vehicle(string vehicleType)
@@ -12,7 +11,6 @@ public class Vehicle {
         this.vehicleType = vehicleType;
     }
 
-    public string ModelName;
     public string Shape;
     public float MaxEngineRPM;
     public float[] MaxSpeedsPerGear;
@@ -20,6 +18,7 @@ public class Vehicle {
 
     public void PrintParts()
     {
+        Debug.Log("Vehicle Type = " + this.vehicleType);
         Debug.Log("Shape = " + this.Shape);
         Debug.Log("Max Engine RPM = " + this.MaxEngineRPM);
         for (int i = 0; i < MaxSpeedsPerGear.Length; i++)

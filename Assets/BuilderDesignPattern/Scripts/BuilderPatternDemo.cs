@@ -9,17 +9,17 @@ public class BuilderPatternDemo : MonoBehaviour {
         Director director = new Director();
 
         var carBuilder = new CarBuilder();
-        var bicycleBuilder = new BicycleBuilder();
+        var truckBuilder = new TruckBuilder();
 
         director.Construct(carBuilder);
-        director.Construct(bicycleBuilder);
+        director.Construct(truckBuilder);
 
         var car = carBuilder.GetVehicle();
-        var bicycle = bicycleBuilder.GetVehicle();
+        var bicycle = truckBuilder.GetVehicle();
 
         Debug.Log("<color=red>Car Parts</color>");
         car.PrintParts();
-        Debug.Log("<color=blue>Bicycle Parts</color>");
+        Debug.Log("<color=blue>Truck Parts</color>");
         bicycle.PrintParts();
 
 	}
