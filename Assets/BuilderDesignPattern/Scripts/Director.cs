@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Director : MonoBehaviour {
+public class Shop : MonoBehaviour {
 
     public void Construct(VehicleBuilder vehicleBuilder)
     {

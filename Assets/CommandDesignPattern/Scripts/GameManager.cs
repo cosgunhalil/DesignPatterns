@@ -9,14 +9,14 @@ public class GameManager : BaseObject {
 
     public override void AwakeObject()
     {
-        AppEventManager.Instance.OnCommandCreated += CommandGetted;
+        AppEventManager.Instance.OnCommandCreated += CommandGet;
         AppEventManager.Instance.UndoButtonClicked += Undo;
         Player.AwakeObject();
     }
 
     private void OnDestroy()
     {
-        AppEventManager.Instance.OnCommandCreated -= CommandGetted;
+        AppEventManager.Instance.OnCommandCreated -= CommandGet;
         AppEventManager.Instance.UndoButtonClicked -= Undo;
     }
 
@@ -25,7 +25,7 @@ public class GameManager : BaseObject {
         Player.StartObject();
     }
 
-    private void CommandGetted(Command command)
+    private void CommandGet(Command command)
     {
         AddCommand(command);
         InvokeLastCommand();

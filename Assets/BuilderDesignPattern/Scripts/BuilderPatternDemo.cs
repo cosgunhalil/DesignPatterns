@@ -6,7 +6,7 @@ public class BuilderPatternDemo : MonoBehaviour {
 
 	void Start () {
 
-        Director director = new Director();
+        Shop director = new Shop();
 
         var carBuilder = new CarBuilder();
         var truckBuilder = new TruckBuilder();

@@ -25,7 +25,7 @@ public class BulletPool : MonoBehaviour {
 
     public GameObject BulletPrefab;
     [SerializeField]
-    private Stack<Bullet> _bulletStack;
+    private Stack<Bullet> _bulletStack;//pool! "kullanıma hazır bütün bullet objeleri burada tutulur"
 
     private void Awake()
     {
@@ -64,7 +64,7 @@ public class BulletPool : MonoBehaviour {
             GenerateBullet();
         }
        
-        var bullet = _bulletStack.Pop();
+        var bullet = _bulletStack.Pop();//en son üretilen ve buraya yerleştirilen bullet alınır!
         bullet.ActivateBullet(true);
         return bullet;
     }
