@@ -1,0 +1,589 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.3f1 (76626098c1c4) revision 7758432'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 32600 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Projects/design-patterns
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56988
+Successfully changed project path to: C:/Projects/design-patterns
+C:/Projects/design-patterns
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 41.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.3f1 (76626098c1c4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projects/design-patterns/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 Super (ID=0x1e91)
+    Vendor:   
+    VRAM:     8011 MB
+    Driver:   27.21.14.6627
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001740 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 35.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.908 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003307 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2042.
+Total: 1.763600 ms (FindLiveObjects: 0.162400 ms CreateObjectMapping: 0.058800 ms MarkObjects: 1.479600 ms  DeleteObjects: 0.062000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/BuilderDesignPattern/Scripts/BuilderPatternDemo.cs
+  artifactKey: Guid(24d4bc52fd5ea3d45bff42df50040987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BuilderPatternDemo.cs using Guid(24d4bc52fd5ea3d45bff42df50040987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500d04031c1ac40ba01fc890ba479058') in 0.022827 seconds
+  Import took 0.025524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/CarBuilder.cs
+  artifactKey: Guid(397b6d22c8188f249ab74f0a22ee8a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/CarBuilder.cs using Guid(397b6d22c8188f249ab74f0a22ee8a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4842c90cd7580b2822d87c9ad16305d') in 0.009343 seconds
+  Import took 0.011862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/BuilderDesignPattern/Scripts
+  artifactKey: Guid(9423a3350517edc4a8ca053595691a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts using Guid(9423a3350517edc4a8ca053595691a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842abbd8bd39aacf35cb8389d8d3259b') in 0.010252 seconds
+  Import took 0.013143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/BuilderDesignPattern
+  artifactKey: Guid(99dd661fdb40b6d4dbe8a78324ca8db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern using Guid(99dd661fdb40b6d4dbe8a78324ca8db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc597014a7d0af4c1fb9c3192967ec38') in 0.007758 seconds
+  Import took 0.010582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1650.037477 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop
+  artifactKey: Guid(f81a38e3314720b408d6ba1f150d526d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop using Guid(f81a38e3314720b408d6ba1f150d526d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4e25086d6033024baf82444da0ec73') in 0.008229 seconds
+  Import took 0.011499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.242915 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs
+  artifactKey: Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs using Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397fefa62ba892334bc5191cc6ad7377') in 0.011174 seconds
+  Import took 0.014667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.030205 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs
+  artifactKey: Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs using Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624b0d20bea5800ec0062ac9a7704fc8') in 0.003275 seconds
+  Import took 0.006000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.361926 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs
+  artifactKey: Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs using Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c840d141bfcb5d33faa3c5556e4432d7') in 0.003497 seconds
+  Import took 0.006098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.771918 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs
+  artifactKey: Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs using Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a900721a0b5e5b83255b4d3c0af193') in 0.003850 seconds
+  Import took 0.007120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.288044 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs
+  artifactKey: Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs using Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e4a5cbebbd120018a5117cba252647') in 0.003790 seconds
+  Import took 0.006406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.645046 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs
+  artifactKey: Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/IBurgerBuilder.cs using Guid(c183a6058fce1b64cb4ab9553ad606ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e041fc631f7949b3720c32210728b002') in 0.003410 seconds
+  Import took 0.006229 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003764 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.818 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1613 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2046.
+Total: 1.598400 ms (FindLiveObjects: 0.156500 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.378800 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.570636 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerDirector.cs
+  artifactKey: Guid(52ac8c65fdc57364fa8c681e103615ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerDirector.cs using Guid(52ac8c65fdc57364fa8c681e103615ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b1850a58942f86fd0b657cc311141b') in 0.011210 seconds
+  Import took 0.014245 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003177 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.927 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2050.
+Total: 2.290700 ms (FindLiveObjects: 0.162300 ms CreateObjectMapping: 0.070000 ms MarkObjects: 2.033200 ms  DeleteObjects: 0.023400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003276 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2053.
+Total: 1.459800 ms (FindLiveObjects: 0.206200 ms CreateObjectMapping: 0.058200 ms MarkObjects: 1.178000 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 134.177821 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerDirector.cs
+  artifactKey: Guid(52ac8c65fdc57364fa8c681e103615ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerDirector.cs using Guid(52ac8c65fdc57364fa8c681e103615ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9691a57b9eb6ea0c681382c565d421') in 0.006233 seconds
+  Import took 0.008903 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003918 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.868 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2056.
+Total: 1.677900 ms (FindLiveObjects: 0.145700 ms CreateObjectMapping: 0.051300 ms MarkObjects: 1.461400 ms  DeleteObjects: 0.017900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.506293 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerDirector.cs
+  artifactKey: Guid(52ac8c65fdc57364fa8c681e103615ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerDirector.cs using Guid(52ac8c65fdc57364fa8c681e103615ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bd047840c57a085c0d52e21a32db2c') in 0.003827 seconds
+  Import took 0.006428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.943243 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/Burger.cs
+  artifactKey: Guid(a3fa686817a71ed4785c8a4c70f8cdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/Burger.cs using Guid(a3fa686817a71ed4785c8a4c70f8cdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6280d018108f6827f6a5e84f12267f54') in 0.009639 seconds
+  Import took 0.012556 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003426 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.916 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2060.
+Total: 1.834300 ms (FindLiveObjects: 0.204800 ms CreateObjectMapping: 0.108000 ms MarkObjects: 1.497600 ms  DeleteObjects: 0.022900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002937 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.902 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2063.
+Total: 1.940300 ms (FindLiveObjects: 0.235800 ms CreateObjectMapping: 0.085000 ms MarkObjects: 1.600600 ms  DeleteObjects: 0.017500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 290.502741 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/Burger.cs
+  artifactKey: Guid(a3fa686817a71ed4785c8a4c70f8cdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/Burger.cs using Guid(a3fa686817a71ed4785c8a4c70f8cdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5724f484530c91eb1836c9ca56a26ba1') in 0.003815 seconds
+  Import took 0.006250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.569394 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BeefBurgerBuilder.cs
+  artifactKey: Guid(123826871be337c4da28b64ea2216953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BeefBurgerBuilder.cs using Guid(123826871be337c4da28b64ea2216953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3cfd3752a32e89b0d1f77e4106ca52') in 0.008876 seconds
+  Import took 0.011921 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003357 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1616 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2067.
+Total: 1.955700 ms (FindLiveObjects: 0.209000 ms CreateObjectMapping: 0.069800 ms MarkObjects: 1.648100 ms  DeleteObjects: 0.027800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003281 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1616 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2070.
+Total: 2.077700 ms (FindLiveObjects: 0.206400 ms CreateObjectMapping: 0.076300 ms MarkObjects: 1.774200 ms  DeleteObjects: 0.019600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 305.983070 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BeefBurgerBuilder.cs
+  artifactKey: Guid(123826871be337c4da28b64ea2216953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BeefBurgerBuilder.cs using Guid(123826871be337c4da28b64ea2216953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d55e66ca4ffc27f35b8a2e66f006e0') in 0.004490 seconds
+  Import took 0.006996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.193886 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerShop.cs
+  artifactKey: Guid(ec14517e8382b9744b3c44b281e31d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerShop.cs using Guid(ec14517e8382b9744b3c44b281e31d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f049c8a5c791d23b18598396d815a59') in 0.008079 seconds
+  Import took 0.011471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.658809 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerShopDemo.cs
+  artifactKey: Guid(ec14517e8382b9744b3c44b281e31d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerShopDemo.cs using Guid(ec14517e8382b9744b3c44b281e31d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12a3049c789d504268e376a0c2ce42a') in 0.007920 seconds
+  Import took 0.011018 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003528 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.891 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1617 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2074.
+Total: 2.152900 ms (FindLiveObjects: 0.174500 ms CreateObjectMapping: 0.065800 ms MarkObjects: 1.881000 ms  DeleteObjects: 0.030700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.172678 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerShopDemo.cs
+  artifactKey: Guid(ec14517e8382b9744b3c44b281e31d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/BurgerShopDemo.cs using Guid(ec14517e8382b9744b3c44b281e31d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0e7ee16f779c204789d20f15339bd7') in 0.004327 seconds
+  Import took 0.006762 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003727 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1617 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2077.
+Total: 1.649800 ms (FindLiveObjects: 0.161600 ms CreateObjectMapping: 0.054300 ms MarkObjects: 1.415400 ms  DeleteObjects: 0.017700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.774425 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/VeggieBurgerBuilder.cs
+  artifactKey: Guid(51fc1296f59e9cf4a96109741260bbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/VeggieBurgerBuilder.cs using Guid(51fc1296f59e9cf4a96109741260bbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258f1420d321654e7824b91533aecedb') in 0.012163 seconds
+  Import took 0.015439 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003152 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.008 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2081.
+Total: 2.476600 ms (FindLiveObjects: 0.292900 ms CreateObjectMapping: 0.132000 ms MarkObjects: 2.025200 ms  DeleteObjects: 0.024900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003315 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2084.
+Total: 1.667400 ms (FindLiveObjects: 0.189100 ms CreateObjectMapping: 0.057100 ms MarkObjects: 1.404100 ms  DeleteObjects: 0.016300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.145512 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/BurgerShop/VeggieBurgerBuilder.cs
+  artifactKey: Guid(51fc1296f59e9cf4a96109741260bbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/BurgerShop/VeggieBurgerBuilder.cs using Guid(51fc1296f59e9cf4a96109741260bbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13479e76eb6effbb75fcda2440030556') in 0.003957 seconds
+  Import took 0.006757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.555087 seconds.
+  path: Assets/BuilderDesignPattern/Scripts/VehicleBuilder.cs
+  artifactKey: Guid(8b825d3712296104cb3be171befa34d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BuilderDesignPattern/Scripts/VehicleBuilder.cs using Guid(8b825d3712296104cb3be171befa34d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f174484012ef853235015712d2424262') in 0.007241 seconds
+  Import took 0.010672 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003707 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2087.
+Total: 1.687400 ms (FindLiveObjects: 0.155000 ms CreateObjectMapping: 0.052300 ms MarkObjects: 1.463500 ms  DeleteObjects: 0.015500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004137 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.969 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1618 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2090.
+Total: 1.735400 ms (FindLiveObjects: 0.169400 ms CreateObjectMapping: 0.060400 ms MarkObjects: 1.484100 ms  DeleteObjects: 0.020600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
