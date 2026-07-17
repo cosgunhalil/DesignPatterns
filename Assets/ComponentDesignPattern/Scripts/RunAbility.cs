@@ -25,7 +25,7 @@ public class RunAbility : PhysicsComponent
             
         }
 
-        playerRigidbody.velocity = new Vector2(currentSpeed, playerRigidbody.velocity.y);
+        playerRigidbody.linearVelocity = new Vector2(currentSpeed, playerRigidbody.linearVelocity.y);
 
     }
 }
