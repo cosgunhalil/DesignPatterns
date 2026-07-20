@@ -1,0 +1,16 @@
+{
+    "name": "DesignPatterns.Observer.Sample",
+    "rootNamespace": "DesignPatterns.Observer.Sample",
+    "references": [
+        "DesignPatterns.Observer"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
