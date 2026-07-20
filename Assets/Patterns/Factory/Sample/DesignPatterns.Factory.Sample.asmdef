@@ -1,0 +1,16 @@
+{
+    "name": "DesignPatterns.Factory.Sample",
+    "rootNamespace": "DesignPatterns.Factory.Sample",
+    "references": [
+        "DesignPatterns.Factory"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
