@@ -1,0 +1,16 @@
+{
+    "name": "DesignPatterns.ObjectPool.Sample",
+    "rootNamespace": "DesignPatterns.ObjectPool.Sample",
+    "references": [
+        "DesignPatterns.ObjectPool"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
