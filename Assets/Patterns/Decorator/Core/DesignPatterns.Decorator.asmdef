@@ -1,0 +1,14 @@
+{
+    "name": "DesignPatterns.Decorator",
+    "rootNamespace": "DesignPatterns.Decorator",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}
