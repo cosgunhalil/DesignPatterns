@@ -33,6 +33,8 @@ Namespaces follow the asmdef names (`DesignPatterns.<Name>`, `.Sample`, `.Tests`
 
 All nine legacy pattern samples have been rewritten under `Assets/Patterns/`: Command, Adapter, Builder, Observer, Factory, ObjectPool, Decorator, Component, MVC, State. No legacy `*DesignPattern/` folders remain.
 
+New patterns added beyond the legacy set (no legacy origin): EventQueue.
+
 Leftover non-pattern legacy: `Assets/CommonScripts` (`CameraManager` — orphaned after the ObjectPool rewrite; safe to remove in a later cleanup) and `Assets/Resources`.
 
 ## Project direction
